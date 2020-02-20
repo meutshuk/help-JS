@@ -6,18 +6,15 @@
         <title>
             My JS coding ground
         </title>
-    <script src="program.js">
-    
-    </script>
+        <script src="program.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>    
 
 
     <body bgcolor="#425863">
-        <h1>This is where i run my <u>JS</u> <span style="color: blue">Code.</span> </h1>
-        <br>
-        <br>
-        <h1>Press <u style="color: salmon"><span style="color: red">Ctrl + Shift + J</span></u> for console</h1>
-        <br>
+        <h1>This is where i run my <u>JS</u> <span style="color: blue">Code.</span> </h1><br><br>
+        
+        <h1>Press <u style="color: salmon"><span style="color: red">Ctrl + Shift + J</span></u> for console</h1><br>
         
         <a href="JavaScript:void(0)" onclick="popup('hesll')" style="background-color: coral;">click</a>  <br><br>
         <!-- href="#" reload the page and takes to the top
@@ -25,15 +22,14 @@
     
         <input type="button" value="Oh baby. tap me" onclick="popup('you horny huh. fuck me baby')"> <br><br>
 
-        <img src="black.jpg" height="200" width="200" onmouseover="src='white.jpg'" onmouseout="src='black.jpg'"><br>
+        <img src="black.jpg" height="200" width="200" id="befr" onmouseover="changePhoto(id,'white.jpg')" onmouseout="changePhoto(id,'black.jpg')"><br>
        
        
         <form>
             <input id="hello" type="text" onfocus="changeYellow();" onblur="changeWhite();">   <!-- no idea how to change this replace this changing color with function. please help-->
         </form>
 
-        <form onsubmit="checkAddress('email');">
-            <br>
+        <form onsubmit="checkAddress('email');"><br>
             Email:<br>
             <input type="text" id="email" onblur="fillNames();"><br>
             First Name: <br>
@@ -43,9 +39,14 @@
             <input type="submit" value="Submit">
         </form>
 
-        <div>
-            
-        </div>
+       <div id="first">
+           for List of Heroes place mouse <a href="JavaScript:void(0)" onmouseover="listHeroes();" onmouseout="nothing();">Here</a>
+       </div>
+       <div id="heroes"><!-- this area is where the infos are displayed after above mouse clicked--></div>
+
+    <br>
+    <img src="blob.jpg" id='uglyboi' onclick="invisible();">
+        
     </body>
 
     <script>

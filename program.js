@@ -31,3 +31,22 @@ function fillNames(){   // this function is to autofill the Fname and lName of i
     document.getElementById('fName').value=fname;
     document.getElementById('lName').value=lname;
 }
+
+function listHeroes(){
+    var name=`<ol>
+    <li> Utshuk </li>
+    <li> Dhamala </li>
+    </ol>
+   `
+    document.getElementById('heroes').innerHTML=name;
+}
+
+function nothing(){ var name=""; document.getElementById('heroes').innerHTML=name;}
+
+function changePhoto(pId,photo){    // function to change photo of certain id (pId) when mouse is over that photo
+    document.getElementById(pId).src=photo; // photo is relaced in the html with that id
+}
+
+function invisible(){   // function to invisible a certain thing when clicked
+    document.getElementById('uglyboi').className='hidden';
+}
