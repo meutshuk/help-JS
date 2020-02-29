@@ -12,11 +12,11 @@
 
 
     <body bgcolor="#425863">
-        <h1>This is where i run my <u>JS</u> <span style="color: blue">Code.</span> </h1><br><br>
+        <h1>This is where i run my <u>JS</u> <span class="blueColor">Code.</span> </h1><br><br>
         
-        <h1>Press <u style="color: salmon"><span style="color: red">Ctrl + Shift + J</span></u> for console</h1><br>
+        <h1>Press <u style="color: salmon"><span class ="redColor">Ctrl + Shift + J</span></u> for console</h1><br>
         
-        <a href="JavaScript:void(0)" onclick="popup('hesll')" style="background-color: coral;">click</a>  <br><br>
+        <a href="JavaScript:void(0)" onclick="popup('hesll')" class="corolbg" >click</a>  <br><br>
         <!-- href="#" reload the page and takes to the top
             but href="JavaScript:void(0)" does nothing    -->
     
@@ -46,9 +46,31 @@
 
     <br>
     <img src="blob.jpg" id='uglyboi' onclick="invisible();">
+    <br>
+
+    <div>
+        <p>
+            Click <a href="JavaScript:void(0)" id="newWindow" onclick="openWindow();">Here</a> To open New Windoe
+        </p>
+    </div>
+
+    <div>
+        <form onsubmit="return checkName();">
+            Enter YOur Last Name: <span class="redColor">*</span>
+            <input type="text" id="LName">
+            <input type="submit" value="Submit Form You Sick Fuck">
+        </form>
+        <span  class="redColor">*</span > : Required 
+    </div>
         
     </body>
 
     <script>
+        // this codes changes color by searching tags from the html tags.
+        var changeColor = document.getElementsByTagName('h1');
+                for (i=0;i<changeColor.length;i++) {
+            changeColor[i].style.color='yellow'
+        }
+        
     </script>
 </html>

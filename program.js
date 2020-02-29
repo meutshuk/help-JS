@@ -49,4 +49,37 @@ function changePhoto(pId,photo){    // function to change photo of certain id (p
 
 function invisible(){   // function to invisible a certain thing when clicked
     document.getElementById('uglyboi').className='hidden';
+    function newWindow(){
+        var apple =window.open()
+        apple.document.write("<h1 style='color:red'>YOU UGLY MOTHERFUCKER. I HATE YOU. GO DIE PUNK.</h1>")
+        setInterval(apple.close(),20000);
+    }
+    newWindow();
+}
+
+function openWindow(){
+    var newWin = window.open("try.html");
+    //windowContent ="<p>Hello vro How are you</p>";
+    //newWin.document.write(windowContent);
+    
+}
+
+function checkPopup(){
+    var testpop = window.open("","","width=100,height=100");
+    if (testpop ===null){
+        alert("Please Turn off your ad blocker");
+    }
+    testpop.close();
+}
+checkPopup();
+
+function checkName(){
+    if (document.getElementById('LName').value.length==0){
+        alert("Mother Fucker are you a bastard huh. Hurry and Write a name you dumbFuck");
+        document.getElementById('LName').focus();   // focus to the form text after alert
+        document.getElementById('LName').style.backgroundColor="yellow";    // changes the color of the text to show where
+        return false;
+
+    }
+    document.getElementById('LName').style.backgroundColor="white";
 }
